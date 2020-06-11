@@ -61,8 +61,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.10.4  | Linux            |
-| DVWA     |          | 10.0.0.6   |                  |
-| DVWA2    |          | 10.0.0.7   |                  |
+| DVWA     |          | 10.0.0.7   |                  |
+| DVWA2    |          | 10.0.0.8   |                  |
 | ELK      |          | 10.0.0.4   |                  |
 
 ### Access Policies
