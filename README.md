@@ -63,7 +63,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Jump Box | Gateway  | 10.0.10.4  | Linux            |
 | DVWA     |          | 10.0.0.7   |                  |
 | DVWA2    |          | 10.0.0.8   |                  |
-| ELK      |          | 10.0.0.4   |                  |
+| ELK      |          | 10.0.1.9   |                  |
 
 ### Access Policies
 
