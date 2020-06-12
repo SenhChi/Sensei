@@ -128,7 +128,14 @@ SSH into the control node and follow the steps below:
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
+- _Which file do you update to make Ansible run the playbook on a specific machine? Update the Hosts(PrivateIpAddress) and ansible.cfg(remote_user:HOSTNAME)
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+- _Which URL do you navigate to in order to check that the ELK server is running?http://<(YourIpAddress)>:5601/app/kibana#/home
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+
+ssh jump@(IpAddress)
+docker run -ti container/ansible
+change dir. /etc/ansible
+ssh-keygen to your web service
+nano hosts (update IP on[webservers][elkservers]
+nano ansible.cfg (remote_user to which server you want to use)
