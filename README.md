@@ -96,12 +96,15 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 
  The playbook implement the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- docker run into your ansible
+- change the ansible hosts to your elkserver
+- change the ansible remote user to your host name.
+- create a yaml script to make connection to the elk application
+- make sure your ports are connected to 5601,9200 and 5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Screen Shot 2020-06-12 at 1 20 32 AM](https://user-images.githubusercontent.com/59639967/84481488-02ef8e00-ac4b-11ea-8192-b2e90b4e5138.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
