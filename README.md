@@ -95,7 +95,8 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - What is the main advantage of automating configuration with Ansible?
 
  The playbook implement the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- apt install docker.io
+- docker pull sepb/elk
 - docker run into your ansible
 - change the ansible hosts to your elkserver
 - change the ansible remote user to your host name.
@@ -108,21 +109,22 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- 10.0.10.4, 10.0.0.7, and 10.0.0.8
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat.yml
+- Metricbeat.yml
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-
+- The Beats allow us to keep track on whos logging in to these servers and monitor the behaviors they are achiving.
+- Also Metrobeats used for monitoring their performance, as well as that of different external services such as CPU, memory and load.
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the ssh-keygen file to ssh public key.
+- Update the security rule file to include the ip_address
+- Run the playbook, and navigate to terminal to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
