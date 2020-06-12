@@ -133,9 +133,9 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running?http://<(YourIpAddress)>:5601/app/kibana#/home
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
-ssh jump@(IpAddress)
-docker run -ti container/ansible
-change dir. /etc/ansible
-ssh-keygen to your web service
-nano hosts (update IP on[webservers][elkservers]
-nano ansible.cfg (remote_user to which server you want to use)
+- ssh jump@(IpAddress)
+- docker run -ti container/ansible
+- change dir. /etc/ansible
+- ssh-keygen to your web service
+- nano hosts (update IP on[webservers][elkservers]
+- nano ansible.cfg (remote_user to which server you want to use)
