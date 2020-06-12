@@ -131,7 +131,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? Update the Hosts(PrivateIpAddress) and ansible.cfg(remote_user:HOSTNAME)
 - How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
 - _Which URL do you navigate to in order to check that the ELK server is running? http://<(YourIpAddress)>:5601/app/kibana#/home
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
 - ssh jump@(IpAddress)
 - docker run -ti container/ansible
